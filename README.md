@@ -45,3 +45,4 @@ Extraemos el metodo y los sustituimos donde estaba situado.
 
 Reducimos el codigo del metodo, eliminando lo repetido. Extraemos un metodo llamado "respuestaCorrectaConteoMonedas" con 
 el contenido de repeticion para simplificar.
+
