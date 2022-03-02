@@ -83,6 +83,7 @@ public class TrivialTests {
         }
     }
 
+    //Test problema 3
     @Test
     public void un_jugador_se_queda_atrapado_en_la_carcel(){
         //Arrange

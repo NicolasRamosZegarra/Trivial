@@ -121,7 +121,7 @@ public class Game {
 
     public boolean fueRespuestaCorrecta() {
         contador_jugador();
-        if (enCasillaCastigo[jugadorActual]){
+        if (enCasillaCastigo[jugadorActual]=false){
             if (estaSaliendoDeLaCarcel) {
                 System.out.println("Respuesta correcta!!!!");
                 monederos[jugadorActual]++;
@@ -141,8 +141,6 @@ public class Game {
                 return true;
             }
 
-
-
         } else {
 
             System.out.println("Respuesta correcta!!!!");
@@ -153,7 +151,7 @@ public class Game {
                     + " monedas doradas.");
 
             boolean ganador = jugadorHaGanado();
-            jugadorActual++;
+            contador_jugador();
             if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
             return ganador;
