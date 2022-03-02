@@ -32,3 +32,7 @@ poder utilizarlo en varios metodos, este metodo es utilizado como contandor
 
 Creamos un test, en el que comprobamos en la primera jugadora que tras fallar la pregunta y lanzar el dado, cae par por lo cual no sale de la carcel
 sin embargo, vemos que la segunda jugadora falla la pregunta pero cuando tira el dad cae par por lo cual sale de la carcel
+
+##Problema 4
+Invertimos el elemento noGanador añadiendo un elemento Ganador, definimos en el metodo que si dados los puntos
+fallas la pregunta pierdes y si aciertas ganas
