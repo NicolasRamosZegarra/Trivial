@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Game {
+
     ArrayList jugadores = new ArrayList();
     int[] posiciones = new int[6];
     int[] monederos = new int[6];
@@ -119,6 +120,7 @@ public class Game {
     }
 
     public boolean fueRespuestaCorrecta() {
+        contador_jugador();
         if (enCasillaCastigo[jugadorActual]){
             if (estaSaliendoDeLaCarcel) {
                 System.out.println("Respuesta correcta!!!!");
@@ -163,9 +165,14 @@ public class Game {
         System.out.println(jugadores.get(jugadorActual)+ " va a la casilla de castigo");
         enCasillaCastigo[jugadorActual] = true;
 
-        jugadorActual++;
+
+        contador_jugador();
         if (jugadorActual == jugadores.size()) jugadorActual = 0;
         return true;
+    }
+
+    private void contador_jugador() {
+        jugadorActual++;
     }
 
 

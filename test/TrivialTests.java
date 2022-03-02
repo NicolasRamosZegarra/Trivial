@@ -83,8 +83,26 @@ public class TrivialTests {
         }
     }
 
+    @Test
+    public void un_jugador_se_queda_atrapado_en_la_carcel(){
+        //Arrange
+        Game player = new Game();
 
+        //Act
+        player.agregar("Paca");
+        player.agregar("Matilde");
 
+        player.respuestaIncorrecta();
+        player.tirarDado(2);
+
+        player.respuestaIncorrecta();
+        player.tirarDado(3);
+
+        player.nuevaPosicionJugador();
+
+        player.fueRespuestaCorrecta();
+    }
+    
 
     @Test
     public void true_is_true(){
