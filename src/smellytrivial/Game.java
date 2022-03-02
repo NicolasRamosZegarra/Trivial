@@ -31,7 +31,12 @@ public class Game {
     }
 
     public boolean esJugable() {
-        return (cuantosJugadores() >= 2);
+        if (cuantosJugadores() < 2) {
+            System.out.println("Se necesitan al menos 2 jugadores para empezar la partida");
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public boolean agregar(String playerName) {

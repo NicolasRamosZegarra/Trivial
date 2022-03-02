@@ -22,6 +22,32 @@ public class TrivialTests {
         Assertions.assertEquals(expected,actual);
     }
 
+    //Test Problema 1
+    @Test
+    public void hay_menos_de_2_jugadores_en_la_partida(){
+        //Arrange
+        Game player = new Game();
+        player.agregar("Lola");
+
+        //Assert
+        Assertions.assertFalse(player.esJugable());
+    }
+
+    @Test
+    public void hay_mas_de_2_jugadores_en_la_partida(){
+        //Arrange
+        Game player = new Game();
+        player.agregar("Elena");
+        player.agregar("Ana");
+        player.agregar("Alba");
+        player.agregar("Pedro");
+
+        //Assert
+        Assertions.assertTrue(player.esJugable());
+    }
+
+
+
 
 
     @Test
