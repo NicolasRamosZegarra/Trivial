@@ -46,6 +46,42 @@ public class TrivialTests {
         Assertions.assertTrue(player.esJugable());
     }
 
+    //Test Problema 2
+    @Test
+    public void hay_mas_de_6_jugadores_en_la_partida(){
+        //Arrange
+        Game player= new Game();
+        try {
+            player.agregar("Josefa");
+            player.agregar("Pilar");
+            player.agregar("Elmo");
+            player.agregar("Greg");
+            player.agregar("Tomas");
+            player.agregar("Aihnoa");
+            player.agregar("Maria");
+            player.agregar("Paco");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            //Assert
+            Assertions.assertFalse(player.esJugable());
+        }
+    }
+
+    @Test
+    public void hay_menos_o_igual_de_6_jugadores_en_la_partida(){
+        //Arrange
+        Game player= new Game();
+        try {
+            player.agregar("Josefa");
+            player.agregar("Pilar");
+            player.agregar("Elmo");
+            player.agregar("Greg");
+            player.agregar("Tomas");
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            //Assert
+            Assertions.assertTrue(player.esJugable());
+        }
+    }
 
 
 

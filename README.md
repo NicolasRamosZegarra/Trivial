@@ -15,3 +15,4 @@ imprescindible, la existencia de al menos 2 jugadores
 Creamos dos test, el primero: "hay_menos_de_2_jugadores_en_la_partida" en el que nos confirma que 
 no hay el minimo de jugadores que pedimos y por lo tanto no se puede jugar. El segundo: "hay_mas_de_2_jugadores_en_la_partida"
 que nos confirma que si hay mas de dos jugadores y por lo tanto se puede jugar la partida.
+
