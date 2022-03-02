@@ -40,3 +40,8 @@ fallas la pregunta pierdes y si aciertas ganas
 ## Problema 5
 
 Extraemos el metodo y los sustituimos donde estaba situado.
+
+## Problema 6
+
+Reducimos el codigo del metodo, eliminando lo repetido. Extraemos un metodo llamado "respuestaCorrectaConteoMonedas" con 
+el contenido de repeticion para simplificar.
