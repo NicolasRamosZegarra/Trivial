@@ -37,3 +37,6 @@ sin embargo, vemos que la segunda jugadora falla la pregunta pero cuando tira el
 Invertimos el elemento noGanador añadiendo un elemento Ganador, definimos en el metodo que si dados los puntos
 fallas la pregunta pierdes y si aciertas ganas
 
+## Problema 5
+
+Extraemos el metodo y los sustituimos donde estaba situado.
