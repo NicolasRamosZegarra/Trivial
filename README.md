@@ -16,3 +16,12 @@ Creamos dos test, el primero: "hay_menos_de_2_jugadores_en_la_partida" en el que
 no hay el minimo de jugadores que pedimos y por lo tanto no se puede jugar. El segundo: "hay_mas_de_2_jugadores_en_la_partida"
 que nos confirma que si hay mas de dos jugadores y por lo tanto se puede jugar la partida.
 
+##Problema 2
+
+Utilizamos y aprovechamos el mismo metodo que en el problema 1 y añadimos una regla que limita el maximo
+de jugadores siendo como maximo 6 por partida.
+
+Creamos dos test, que nos indica, el primero "hay_mas_de_6_jugadores_en_la_partida" que si hay mas
+de 6 jugadores la partida no puede empezar, y el segundo "hay_menos_o_igual_de_6_jugadores_en_la_partida" 
+nos confirma que si hay menos o igual que 6 jugadores la partida puede comenzar
+
