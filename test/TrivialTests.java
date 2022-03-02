@@ -102,7 +102,7 @@ public class TrivialTests {
 
         player.fueRespuestaCorrecta();
     }
-    
+
 
     @Test
     public void true_is_true(){
